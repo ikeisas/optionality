@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ikeisas-optionality"
+version = "0.1.0"
+description = "统计字段出现率，把实际总是存在的字段标为必填建议"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ikeisas" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://ikeisas.github.io"
+Repository = "https://github.com/ikeisas/optionality"
+Issues = "https://github.com/ikeisas/optionality/issues"
+
+[project.scripts]
+optionality = "optionality:main"
+
+[tool.setuptools]
+py-modules = ["optionality"]
